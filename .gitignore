@@ -1,0 +1,15 @@
+/src/plugins/
+/src/world/
+/src/world_nether/
+/src/world_the_end/
+/src/node_modules/
+/src/logs/
+/src/cache
+/src/server
+*.json
+*.log
+*.gz
+*.jar
+*.yml
+*.properties
+*.txt
