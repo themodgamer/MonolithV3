@@ -18,7 +18,7 @@ function Pushcommands() {
         } catch (error) {
             console.error(error);
         }
-        })();
+    })();
 }
 
 module.exports = { Pushcommands }

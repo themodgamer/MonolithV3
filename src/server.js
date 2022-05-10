@@ -4,7 +4,7 @@ const EventEmitter = require('events');
 class Server{
     constructor(batlocation){
         this.batlocation = batlocation;
-        this.status = 'offline';
+        this.status = 'Offline';
         this.running = false;
         this.bat = null;
         this.event = new EventEmitter();
@@ -19,12 +19,12 @@ class Server{
                 this.event.emit('Done');
                 this.status = 'Online';
             }
-            console.log(data.toString());
+            //console.log(data.toString());
         });
         
-        this.bat.stderr.on('data', (data) => {
+        /*this.bat.stderr.on('data', (data) => {
             console.error(data.toString());
-        });
+        });*/
 
         this.bat.on('exit', (code) => {
             console.log(`Server exited with code ${code}`);

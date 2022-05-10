@@ -6,7 +6,7 @@ class Ngrokentity{
     constructor(){
         this.running = false;
         this.url = "None";
-        this.status = 'closed';
+        this.status = 'Closed';
         this.event = new EventEmitter();
     }
 
@@ -19,6 +19,7 @@ class Ngrokentity{
             region: 'eu', // one of ngrok regions (us, eu, au, ap, sa, jp, in), defaults to us
             onStatusChange: status => {this.statuschange(status)}, // 'closed' - connection is lost, 'connected' - reconnected
         });
+        this.url.replace("tcp://","");
     }
 
     statuschange(status) {
