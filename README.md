@@ -1,2 +1,2 @@
 # Monolith
- Monolith Bot Could take over the world potentially.
+A server handling Bot intergrated into discord as a bot.
